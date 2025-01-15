@@ -482,7 +482,14 @@
 							<div class="row contact-form-area">
 								<div class="col-md-12 col-lg-8 col-sm-8 center-div">
 									<div class="contact_form wow fadeInLeft">
-										<form name="feedback" method="POST" data-netlify="true" id="main_contact_form">
+										
+										<form name="feedback" id="main_contact_form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+											<!-- Hidden input to specify the form name (required for Netlify) -->
+											<input type="hidden" name="form-name" value="feedback" />
+											
+											<!-- Hidden field for honeypot spam prevention -->
+											<input type="hidden" name="bot-field" />
+											
 											<div class="contact_input_area">
 											  <div id="success_fail_info"></div>
 											  <div class="row">
@@ -520,11 +527,11 @@
 												</div>
 											  </div>
 											</div>
-										</form>										
+										  </form>
+																		  
 									</div>
 								</div>
 							</div>							
-
 						</div>
 					</div>
 				</section>
