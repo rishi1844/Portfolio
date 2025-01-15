@@ -482,7 +482,7 @@
 							<div class="row contact-form-area">
 								<div class="col-md-12 col-lg-8 col-sm-8 center-div">
 									<div class="contact_form wow fadeInLeft">
-										
+
 										<form name="feedback" id="main_contact_form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 											<!-- Hidden input to specify the form name (required for Netlify) -->
 											<input type="hidden" name="form-name" value="feedback" />
@@ -534,18 +534,7 @@
 							</div>							
 						</div>
 					</div>
-				</section>
-
-				<!-- Popup Modal -->
-				<div id="popupModal" class="popup-modal">
-					<div class="popup-content">
-						<!-- Close Button -->
-						<span class="popup-close" onclick="closePopup()">&times;</span>
-						<h2>Thank You! 🎉</h2>
-						<p>Your Message Has Been Sent Successfully.</p>
-						<button onclick="window.location.href='index.html'" class="btn btn-primary">Back To Home</button>
-					</div>
-				</div>			
+				</section>		
 
 				<!-- Footer Section Start -->
 				<div class="sc-gFGZVQ ecezqh">
@@ -602,39 +591,6 @@
 				<a href="#" class="back-to-top">
 					<i class="fa fa-arrow-up"></i>
 				</a>
-
-				<script>
-					document.getElementById('main_contact_form').addEventListener('submit', function (event) {
-					event.preventDefault(); // Prevent page reload
-
-					// Log the form data
-					const formData = new FormData(event.target);
-					for (const [key, value] of formData.entries()) {
-						console.log(key, value);
-					}
-
-					// You can proceed with AJAX or a normal form submission
-					});
-
-					function showPopup() {
-						const popup = document.getElementById('popupModal');
-						popup.style.display = 'flex'; // Display the popup
-					}
-
-					// Function to close the popup
-					function closePopup() {
-						const popup = document.getElementById('popupModal');
-						popup.style.display = 'none'; // Hide the popup
-					}
-
-					// Handle form submission
-					document.getElementById('main_contact_form').addEventListener('submit', function (event) {
-						event.preventDefault(); // Prevent the form from refreshing the page
-
-						// Simulate form submission success
-						showPopup(); // Show the success popup
-					});
-				</script>
 
 				<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 				<script src="assets/js/jquery-min.js"></script>
