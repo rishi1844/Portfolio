@@ -482,43 +482,45 @@
 							<div class="row contact-form-area">
 								<div class="col-md-12 col-lg-8 col-sm-8 center-div">
 									<div class="contact_form wow fadeInLeft">
-										<form name="feedback" id="main_contact_form" netlify>
+										<form name="feedback" method="POST" data-netlify="true" id="main_contact_form">
 											<div class="contact_input_area">
 											  <div id="success_fail_info"></div>
 											  <div class="row">
 												<!-- Form Group -->
 												<div class="col-12">
 												  <div class="form-group">
-													<input type="text" name="name" class="form-control" placeholder="Name" required>
+													<input type="text" name="name" class="form-control" placeholder="Name" required />
 												  </div>
 												</div>
+												
 												<!-- Form Group -->
 												<div class="col-12 col-lg-6">
 												  <div class="form-group">
-													<input type="email" name="email" class="form-control" placeholder="Email" required>
+													<input type="email" name="email" class="form-control" placeholder="Email" required />
 												  </div>
 												</div>
+												
 												<!-- Form Group -->
 												<div class="col-12 col-lg-6">
 												  <div class="form-group">
-													<input type="text" name="subject" class="form-control" placeholder="Subject" required>
+													<input type="text" name="subject" class="form-control" placeholder="Subject" required />
 												  </div>
 												</div>
+												
 												<!-- Form Group -->
 												<div class="col-12">
 												  <div class="form-group">
 													<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required></textarea>
 												  </div>
 												</div>
+												
 												<!-- Button -->
 												<div class="col-12 text-center">
 												  <button type="submit" class="btn btn-secondary ct_btn" title="Submit Your Message!">Send Message</button>
 												</div>
 											  </div>
 											</div>
-											<!-- Hidden input to specify the form name (required for Netlify) -->
-											<input type="hidden" name="form-name" value="feedback" />
-										</form>										  
+										</form>										
 									</div>
 								</div>
 							</div>							
