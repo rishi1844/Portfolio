@@ -122,7 +122,8 @@ ol li {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -webkit-animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  -webkit-animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41)
+    infinite;
   animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
 }
 
@@ -136,7 +137,8 @@ ol li {
   top: calc(50% - 30px);
   border-right: 0;
   border-top-color: transparent;
-  -webkit-animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  -webkit-animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41)
+    infinite;
   animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
 }
 
@@ -374,8 +376,13 @@ button:focus {
   font-size: 16px;
   margin-top: 22px;
   font-weight: 600;
-  background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
-  box-shadow: rgb(31 38 52 / 71%) 10px 10px 20px, rgb(31 38 52 / 46%) -10px -10px 20px;
+  background: -webkit-linear-gradient(
+    225deg,
+    rgb(132, 0, 255) 0%,
+    rgb(230, 0, 255) 100%
+  );
+  box-shadow: rgb(31 38 52 / 71%) 10px 10px 20px,
+    rgb(31 38 52 / 46%) -10px -10px 20px;
   transition: transform 0.3s ease-in-out;
   /* Smooth zoom and spacing transition */
 }
@@ -398,7 +405,6 @@ button:focus {
     font-size: 14px;
   }
 }
-
 
 .skills-section {
   display: flex;
@@ -423,7 +429,6 @@ button:focus {
   flex-direction: column; /* Align content vertically */
   min-height: 300px; /* Ensures all boxes have the same minimum height */
 }
-
 
 .skill-title {
   font-size: 24px;
@@ -462,10 +467,14 @@ button:focus {
 .skill-item:hover {
   transform: translateY(-5px);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  color: rgba(242, 243, 244, 0.9); /* Optional: Slightly brighten text color on hover */
+  color: rgba(
+    242,
+    243,
+    244,
+    0.9
+  );
   cursor: pointer;
 }
-
 
 .skill-item img {
   width: 24px;
@@ -474,23 +483,22 @@ button:focus {
 
 @media (max-width: 992px) {
   .skill-group {
-      flex: 1 1 calc(50% - 30px);
+    flex: 1 1 calc(50% - 30px);
   }
 }
 
 @media (max-width: 768px) {
   .skill-group {
-      flex: 1 1 100%;
-      min-height: 0px;
+    flex: 1 1 100%;
+    min-height: 0px;
   }
 }
 
 @media (max-width: 480px) {
   .skill-item {
-      flex: 0 1 100%;
+    flex: 0 1 100%;
   }
 }
-
 
 /* ScrollToTop */
 
@@ -593,8 +601,8 @@ a.back-to-top:focus {
   padding: 0 15px;
 }
 
-.navbar-nav{
-  padding:0px 0px 0px 300px;
+.navbar-nav {
+  padding: 0px 0px 0px 300px;
 }
 
 .dark_bg_menu .navbar-nav .nav-link {
@@ -618,10 +626,10 @@ a.back-to-top:focus {
   color: #ff0 !important;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.open,
-.navbar-light .navbar-nav .open>.nav-link {
+.navbar-light .navbar-nav .open > .nav-link {
   color: #ff0 !important;
 }
 
@@ -710,14 +718,13 @@ a.back-to-top:focus {
 }
 
 .navbar-collapse {
-  align-items: center; 
+  align-items: center;
 }
 
 /* General Navbar Styles */
 .navbar {
   padding: 15px 0;
 }
-
 
 /* Navbar Links */
 .navbar-nav {
@@ -746,7 +753,7 @@ a.back-to-top:focus {
   transition: all 0.6s ease;
 }
 
-.cZxwzv:hover{
+.cZxwzv:hover {
   background-color: rgb(133, 76, 230);
   box-shadow: rgba(23, 92, 230, 0.51) 0px 4px 24px;
   color: #fff;
@@ -799,7 +806,6 @@ a.back-to-top:focus {
     padding: 5px 10px;
   }
 }
-
 
 /* ==========================================================================
 02. End Header Area
@@ -972,7 +978,6 @@ a.back-to-top:focus {
   bottom: 10px;
 }
 
-
 .services-item {
   border: 1px solid #ccc;
   background: transparent;
@@ -1030,7 +1035,6 @@ a.back-to-top:focus {
 .dark_bg .services-item .services-content p {
   color: #fff;
 }
-
 
 .portfolio .mix {
   padding: 10px;
@@ -1155,7 +1159,6 @@ a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 
-
 .funfact {
   box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -1205,10 +1208,21 @@ a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 
-
 /* Project */
 
-.vr{
+.hrr {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hrr:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  color: rgba(242, 243, 244, 0.9);
+}
+
+
+.vr {
   background-color: #560f9d;
   color: white !important;
   border-color: #000;
@@ -1216,18 +1230,16 @@ a:not([href]):not([tabindex]):hover {
   padding: 12px 20px 12px 20px;
 }
 
-.vr:hover{
+.vr:hover {
   background-color: #000;
   color: white;
 }
 
-#soon1{
+#soon1 {
   background-color: #c9c9c9;
   color: rgb(0, 0, 0) !important;
   margin: 20px 0px 0px 0px;
 }
-
-
 
 @media only screen and (max-width: 480px) {
   .single_blog {
@@ -1261,12 +1273,12 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .blog-thumb small,
-.blog-thumb small+span {
+.blog-thumb small + span {
   display: inline-block;
   vertical-align: middle;
 }
 
-.blog-thumb small+span {
+.blog-thumb small + span {
   color: #333333;
   font-size: 10px;
   font-weight: bold;
@@ -1274,7 +1286,7 @@ a:not([href]):not([tabindex]):hover {
   margin-left: 2px;
 }
 
-.dark_bg .blog-thumb small+span {
+.dark_bg .blog-thumb small + span {
   color: #fff;
 }
 
@@ -1296,7 +1308,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .blog-info {
-  box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 20px rgb(18 39 75 / 20%);
   padding: 18px 30px;
 }
 
@@ -1307,7 +1319,6 @@ a:not([href]):not([tabindex]):hover {
 .blog-info .blog_btn {
   margin: 20px 15px 0px 0px;
 }
-
 
 #contact {
   position: relative;
@@ -1432,8 +1443,6 @@ a:not([href]):not([tabindex]):hover {
   width: 100%;
 }
 
-
-
 /* General container styles */
 .ecezqh {
   width: 100%;
@@ -1458,7 +1467,7 @@ a:not([href]):not([tabindex]):hover {
 .kLIOnl {
   font-weight: 600;
   font-size: 1.8rem; /* Scaled for smaller screens */
-  color: #00FFFF;
+  color: #00ffff;
   text-align: center; /* Center align for small screens */
 }
 
@@ -1535,7 +1544,6 @@ a:not([href]):not([tabindex]):hover {
   }
 }
 
-
 @media (max-width: 1000px) {
   .banner-images img {
     margin-top: 150px;
@@ -1546,9 +1554,6 @@ a:not([href]):not([tabindex]):hover {
     width: 250px;
   }
 }
-
-
-
 
 /* Popup Modal Styles */
 .popup-modal {
@@ -1597,7 +1602,7 @@ a:not([href]):not([tabindex]):hover {
 .popup-content h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 /* Message Text */
@@ -1611,7 +1616,7 @@ a:not([href]):not([tabindex]):hover {
 .popup-content button {
   padding: 12px 25px;
   font-size: 16px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #000000;
   border: none;
   border: none;
@@ -1622,57 +1627,54 @@ a:not([href]):not([tabindex]):hover {
 
 .popup-content button:hover {
   background-color: transparent;
-  border: 1px solid #4CAF50;
+  border: 1px solid #4caf50;
 }
-
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   70% {
-      opacity: 0.5; /* Slight fade-in delay to give a smooth transition */
+    opacity: 0.5; /* Slight fade-in delay to give a smooth transition */
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 /* Slide-in animation with easing */
 @keyframes slideIn {
   0% {
-      transform: translateY(40px);  /* Start with a larger offset */
-      opacity: 0;
+    transform: translateY(40px); /* Start with a larger offset */
+    opacity: 0;
   }
   50% {
-      transform: translateY(15px);  /* Smooth motion, stopping halfway */
-      opacity: 0.7;
+    transform: translateY(15px); /* Smooth motion, stopping halfway */
+    opacity: 0.7;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
-
-
 
 /* Responsiveness for smaller devices */
 @media (max-width: 600px) {
   .popup-content {
-      width: 95%; /* Full width on smaller screens */
-      padding: 20px;
+    width: 95%; /* Full width on smaller screens */
+    padding: 20px;
   }
 
   .popup-content h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .popup-content p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .popup-content button {
-      font-size: 14px;
-      padding: 10px 20px;
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
